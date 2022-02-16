@@ -1,4 +1,6 @@
 import React from 'react';
+import moment from 'moment';
+import 'moment/locale/es';
 import './Mensaje.css';
 
 /* ------------------------------------------------------------ */
@@ -7,11 +9,15 @@ import './Mensaje.css';
 
 //La funcion tiene el mismo nombre que el archivo:
 function Mensaje(props){
+    //console.log(props.msj);
+
+    const {color, msj} = props;
 
     return(
         <div className="Mensaje">
-            <div className="jumbotron">
-                <h3>{ props.msj }</h3>
+            <div className="jumbotron py-2" style={{ backgroundColor: color}}>
+                <h3>{ msj }</h3>
+                <p>{ moment().format('[Publicado el dia: ] LL') }</p>
             </div>
         </div>
     )

@@ -1,8 +1,9 @@
 import logo from './logo.svg';
-import './App.css';
 import Mensaje from './componentes/Mensaje';
+import HoraActual from './componentes/HoraActual';
 import moment from 'moment';
 import 'moment/locale/es';
+import './App.css';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
 
       {/* Dentro de las llaves: {} puedo escribir codigo Javascript, como este comentario o la funcion de abajo.*/}
       <div className='container-fluid align-items-end bg-dark'>
+        <HoraActual></HoraActual>
         <p className='text-white m-0'> { moment().format('[Proyecto ©]YYYY') }</p>
       </div>          
     </div>

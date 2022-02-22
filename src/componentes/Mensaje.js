@@ -11,6 +11,7 @@ import './Mensaje.css';
 function Mensaje(props){
     //console.log(props.msj);
 
+    //Se puede desestructurar tambien al llamar la funcion Mensaje = ( {color, msj} ) => {}
     const {color, msj} = props;
 
     return(
@@ -24,3 +25,6 @@ function Mensaje(props){
 }
 
 export default Mensaje;
+
+//Tambien se puede exportar como objeto, desestructurando, si tenemos una o varias funciones:
+//export { Mensaje }

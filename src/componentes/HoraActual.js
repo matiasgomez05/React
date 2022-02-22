@@ -10,5 +10,4 @@ function HoraActual() {
     
 }
 
-setInterval(HoraActual, 1000);
 export default HoraActual;

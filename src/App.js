@@ -1,14 +1,18 @@
-import logo from './logo.svg';
-import Mensaje from './componentes/Mensaje';
-import Contador from './componentes/Contador';
-
-//Tambien se puede exportar como objeto, desestructurando, si no posee un export default:
-//import { Mensaje } from './componentes/Mensaje';
-
-import HoraActual from './componentes/HoraActual';
+/* Librerias */
 import moment from 'moment';
 import 'moment/locale/es';
+
+/* Estilos */
 import './App.css';
+
+/* Componentes */
+import logo from './logo.svg';
+import Mensaje from './componentes/Mensaje';
+//Tambien se puede exportar como objeto, desestructurando, si no posee un export default:
+//import { Mensaje } from './componentes/Mensaje';
+import Contador from './componentes/Contador';
+import HoraActual from './componentes/HoraActual';
+import Multiplicador from './componentes/Multiplicador';
 
 function App() {
   return (
@@ -41,6 +45,7 @@ function App() {
       </div>
 
       <Contador id="1" fondo="darkblue" valor={123}></Contador>
+      <Multiplicador multiplicador={2}></Multiplicador>
 
       {/* Dentro de las llaves: {} puedo escribir codigo Javascript, como este comentario o la funcion de abajo.*/}
       <div className='container-fluid align-items-end bg-dark'>

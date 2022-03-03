@@ -1,9 +1,12 @@
 import React, {Fragment, useState} from 'react';
 import P from './P';
 
+/*
+* Practica de Hooks: useState siempre debe contener un valor para inicializar la variable
+*/
 const Multiplicador = () => {
 
-    const [multiplicador, setMultiplicador] = useState(0);
+    const [multiplicador, setMultiplicador] = useState(1);
 
     const multiplicar = () => {
         setMultiplicador(multiplicador * 2);

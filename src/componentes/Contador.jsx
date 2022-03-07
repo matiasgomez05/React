@@ -15,6 +15,7 @@ class Contador extends React.Component {
         
         //Se puede asociar la funcion con el objeto en cuestion (bind) en caso de que no sea un callback (linea 45)
         //this.incrementar = this.incrementar.bind(this);
+        console.log('Contador --> Constructor');
     }
 
     state = {
@@ -23,6 +24,14 @@ class Contador extends React.Component {
 
     incrementar(){
         this.setState({ contador: this.state.contador + 1 })
+    }
+
+    reiniciar(){
+        this.setState({ contador: 0 })
+    }
+
+    decrementar(){
+        this.setState({ contador: this.state.contador - 1 })
     }
 
     render(){
@@ -46,7 +55,13 @@ class Contador extends React.Component {
                     <button className='btn btn-secondary mb-3' onClick={ this.incrementar }> 
 
                     */}
-                    <button className='btn btn-secondary mb-3' onClick={ () => this.incrementar() }>
+                    <button className='btn btn-danger mb-3' onClick={ () => this.decrementar() }>
+                        Decrementar
+                    </button>
+                    <button className='btn btn-secondary mb-3 mx-3' onClick={ () => this.reiniciar() }>
+                        Reiniciar
+                    </button>
+                    <button className='btn btn-primary mb-3' onClick={ () => this.incrementar() }>
                         Incrementar 
                     </button>
                 </div>

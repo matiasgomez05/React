@@ -1,6 +1,4 @@
 /* Librerias */
-import moment from 'moment';
-import 'moment/locale/es';
 
 /* Estilos */
 import './App.css';
@@ -11,7 +9,8 @@ import Mensaje from './componentes/Mensaje';
 //Tambien se puede exportar como objeto, desestructurando, si no posee un export default:
 //import { Mensaje } from './componentes/Mensaje';
 import Contador from './componentes/Contador';
-import HoraActual from './componentes/HoraActual';
+import Horario from './componentes/Horario';
+import Año from './componentes/Año';
 import Multiplicador from './componentes/Multiplicador';
 
 function App() {
@@ -44,13 +43,13 @@ function App() {
         </div>
       </div>
 
-      <Contador id="1" fondo="darkblue" valor={123}></Contador>
+      <Contador id="1" fondo="darkblue" valor={0}></Contador>
       <Multiplicador multiplicador={2}></Multiplicador>
 
-      {/* Dentro de las llaves: {} puedo escribir codigo Javascript, como este comentario o la funcion de abajo.*/}
+      {/* Dentro de las llaves: {} puedo escribir codigo Javascript, como este comentario */}
       <div className='container-fluid align-items-end bg-dark'>
-        <HoraActual></HoraActual>
-        <p className='text-white m-0'> { moment().format('[Proyecto ©]YYYY') }</p>
+        <Horario></Horario>
+        <Año></Año>
       </div>          
     </div>
   );

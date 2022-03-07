@@ -2,6 +2,7 @@ import React, {Fragment, useState} from 'react';
 import P from './P';
 
 /*
+* Practica de Fragment: El elemento Fragment me permite traer otro elemento previamente creado (<P /> en este caso)
 * Practica de Hooks: useState siempre debe contener un valor para inicializar la variable
 */
 const Multiplicador = () => {
@@ -17,8 +18,8 @@ const Multiplicador = () => {
             <h1>
                 { multiplicador }
             </h1>
-            <button onClick={multiplicar}>
-                Multiplicar
+            <button className='btn btn-secondary' onClick={ multiplicar }>
+                Multiplicar x2
             </button>
 
             <P />

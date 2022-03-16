@@ -37,25 +37,23 @@ code {
 	width: 8px;
 	height: 8px;
 }
-
 /*
 * Clase "btn"
 * Boton redondeado de tamaño estandar. Se puede combinar con los estilos de "btn-(tipo)"
 */
 .btn {
-  	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-  	font-size: 12px;
-	font-weight: bold;
-	margin: 10px 2px;
-  	padding: 12px;
-  	width: 100px;
-  	cursor: pointer;
-	border-width: 1px;
-  	border-radius: 15px;
-	transition: all 0.5s;
+  display: inline-block;
+justify-content: center;
+align-items: flex-start;
+text-align: center;
+  font-size: 12px;
+font-weight: bold;
+margin: 6px 8px 6px 2px;
+  padding: 7px 10px;
+  cursor: pointer;
+border-width: 1px;
+  border-radius: 15px;
+transition: all 0.5s;
 }
 
 /*
@@ -63,17 +61,17 @@ code {
 * Combinable con las clases "btn". Establece color primario del sitio, sombra y efecto de hover
 */
 .btn-principal {
-	color: #00769E;
-	border-color: #016A8E;
-  	background-color: white;
-	box-shadow: 2px 2px 5px #016A8E;
+color: #00769E;
+border-color: #016A8E;
+  background-color: white;
+box-shadow: 2px 2px 5px #016A8E;
 }
 
 .btn-principal:hover{
-	color: white;
-	border-color: #0099CC;
-	background-color: #0099CC;
-	box-shadow: 2px 2px 5px lightslategrey;
+color: white;
+border-color: #0099CC;
+background-color: #0099CC;
+box-shadow: 2px 2px 5px lightslategrey;
 }
 
 /*
@@ -81,15 +79,33 @@ code {
 * Combinable con las clases "btn". Establece color secundario del sitio, sombra y efecto de hover
 */
 .btn-secundario {
-	color: #323232;
-	border-color: #878786;
-	background-color: #FFFFFF;
-	box-shadow: 2px 2px 5px #4F4F4F;
+color: #323232;
+border-color: #878786;
+background-color: #FFFFFF;
+box-shadow: 2px 2px 5px #4F4F4F;
 }
 
 .btn-secundario:hover{
-	color: #FFFFFF;
-	border-color: #4F4F4F;
-  	background-color: #949494;
-	box-shadow: 2px 2px 5px #4F4F4F;
+color: #FFFFFF;
+border-color: #4F4F4F;
+  background-color: #949494;
+box-shadow: 2px 2px 5px #4F4F4F;
+}
+
+/*
+* Clase "btn-secundario"
+* Combinable con las clases "btn". Establece color secundario del sitio, sombra y efecto de hover
+*/
+.btn-importante {
+color: #C80000;
+border-color: #C93A3A;
+background-color: #FFFFFF;
+box-shadow: 2px 2px 5px #C93A3A;
+}
+
+.btn-importante:hover{
+color: #FFFFFF;
+border-color: #4F4F4F;
+  background-color: #C80000;
+box-shadow: 2px 2px 5px #4F4F4F;
 }
